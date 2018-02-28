@@ -1,0 +1,14 @@
+{
+    "name": "loopers/loopers",
+    "description": "Media sosial para musisi indie",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Datros Sumendong",
+            "email": "dsumendong@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
