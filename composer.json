@@ -1,6 +1,6 @@
 {
     "name": "loopers/loopers",
-    "description": "Media sosial para musisi indie",
+    "description": "Media sosial para musik creator",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -10,5 +10,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "autoload":{
+      "psr-4":{"Acme\\":"src/"}
+    }
 }
