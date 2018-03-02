@@ -1,11 +1,26 @@
 <?php
 
+  /**
+   * @use namespace loopers
+   */
   use loopers\route;
-  use loopers\controller;
 
+  /**
+   * @PSR-4 autoload
+   */
   require_once 'vendor/autoload.php';
 
-  $rout=new route();
-  $controller=new controller();
+  /**
+   * @session Start
+   */
+  session_start();
+
+  /**
+   * @var route
+   *
+   * Metode route yang digunakan adalah metode bolean
+   */
+  $route=new route();
+  $route->init();
 
 ?>

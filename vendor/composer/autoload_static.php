@@ -18,11 +18,15 @@ class ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a
         array (
             0 => __DIR__ . '/../..' . '/route',
             1 => __DIR__ . '/../..' . '/libs',
+            2 => __DIR__ . '/../..' . '/database',
+            3 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
         'loopers\\controller' => __DIR__ . '/../..' . '/libs/controller.php',
+        'loopers\\database\\database' => __DIR__ . '/../..' . '/database/database.php',
+        'loopers\\model' => __DIR__ . '/../..' . '/libs/model.php',
         'loopers\\route' => __DIR__ . '/../..' . '/route/route.php',
     );
 

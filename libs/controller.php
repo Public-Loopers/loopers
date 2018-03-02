@@ -5,9 +5,34 @@
   class controller
   {
 
-    public function __construct()
+    /**
+     * @Fungsi untuk meload models
+     */
+    public function loadModel($models)
     {
-      echo 'file libs/coontroller.php ready!!! <br/>';
+      $fileModel='app/models/'.$models.'_model.php';
+
+      if(file_exists($fileModel))
+      {
+        require_once $fileModel;
+        $modelName=$models.'_model';
+        $this->model=new loopers\$modelName();
+      }
+    }
+
+    /**
+     * @Fungsi untuk meload views
+     */
+    public function loadView($views)
+    {
+      $fileView='app/views/controllers_view/'.$views.'_view.php';
+
+      if(file_exists($fileView))
+      {
+        require_once $fileView;
+        $viewName=$views.'_view';
+        $this->view=new loopers\$viewName();
+      }
     }
 
   }
