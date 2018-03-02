@@ -1,7 +1,7 @@
 <title><?=(isset($this->title)) ? $this->title : 'Loopers' ;?></title>
 <link rel="stylesheet" href="<?php echo URL;?>vendor/jsboots/css/styles.css<?='?v='.token::v_building(7);?>">
 <link rel="shortcut icon" type="image/x-icon" href="<?=URL;?>public/images/icon.png">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="<?=URL;?>vendor/jsboots/js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="<?=URL;?>vendor/jsboots/js/vue.min.js"></script>
 <?php if(isset($this->js)) { ?>

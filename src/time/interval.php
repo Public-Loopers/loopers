@@ -1,5 +1,7 @@
 <?php
 
+  namespace loopers;
+
   class interval extends waktu
   {
     public static function _waktu($tanggal)

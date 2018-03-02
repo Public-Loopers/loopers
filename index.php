@@ -4,6 +4,7 @@
    * @use namespace loopers
    */
   use loopers\route;
+  use loopers\dibug;
 
   /**
    * @PSR-4 autoload

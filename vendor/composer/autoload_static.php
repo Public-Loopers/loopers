@@ -24,10 +24,16 @@ class ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a
     );
 
     public static $classMap = array (
+        'loopers\\Waktu' => __DIR__ . '/../..' . '/src/time/waktu.php',
         'loopers\\controller' => __DIR__ . '/../..' . '/libs/controller.php',
         'loopers\\database\\database' => __DIR__ . '/../..' . '/database/database.php',
+        'loopers\\dibug' => __DIR__ . '/../..' . '/src/dibug/dibug.php',
+        'loopers\\interval' => __DIR__ . '/../..' . '/src/time/interval.php',
         'loopers\\model' => __DIR__ . '/../..' . '/libs/model.php',
+        'loopers\\redirect' => __DIR__ . '/../..' . '/src/redirect/redirect.php',
         'loopers\\route' => __DIR__ . '/../..' . '/route/route.php',
+        'loopers\\token' => __DIR__ . '/../..' . '/src/token/token.php',
+        'loopers\\validation' => __DIR__ . '/../..' . '/src/validation/validation.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
