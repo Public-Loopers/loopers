@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'loopers\\controller' => $baseDir . '/libs/controller.php',
+    'loopers\\route' => $baseDir . '/route/route.php',
 );
