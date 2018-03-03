@@ -12,6 +12,7 @@
      */
     $sources=array(
                    "database/$class.php",
+                   "src/$class.php",
                    "mvc/$class.php",
                    "loopers/time/$class.php",
                    "loopers/token/$class.php",
