@@ -5,7 +5,7 @@
 
     public function __construct()
     {
-      parent::__consttruct();
+      $this->_db::database::getInstance();
     }
 
   }
