@@ -9,8 +9,5 @@
             "email": "dsumendong@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "autoload":{
-      "psr-4":{"loopers\\":["route/","loopers/"]}
-    }
+    "minimum-stability": "stable"
 }
