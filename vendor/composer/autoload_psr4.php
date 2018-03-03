@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'loopers\\' => array($baseDir . '/route'),
+    'loopers\\' => array($baseDir . '/route', $baseDir . '/loopers'),
 );

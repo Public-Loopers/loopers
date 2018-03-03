@@ -17,7 +17,12 @@ class ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36
         'loopers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/route',
+            1 => __DIR__ . '/../..' . '/loopers',
         ),
+    );
+
+    public static $classMap = array (
+        'loopers\\route' => __DIR__ . '/../..' . '/route/route.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -25,6 +30,7 @@ class ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36::$classMap;
 
         }, null, ClassLoader::class);
     }

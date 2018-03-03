@@ -1,6 +1,6 @@
 <?php
 
-  class route
+  class rout
   {
 
     /**
@@ -26,6 +26,7 @@
       if(empty($this->_url[0]))
       {
         $this->_loadDefaultController();
+        exit;
       }
 
       /**
@@ -58,7 +59,7 @@
        * Parameter kedua adalah untuk mengaktifkan (true/false) fungsi dibug
        * Parameter ketiga adalah untuk mengaktifkan (true/false) fungsi die()
        */
-      dibug::v_dump($this->_url, true, true);
+      dibug::v_dump($this->_url, false, false);
     }
 
     /**
@@ -71,12 +72,10 @@
         require_once 'app/controllers/index/index.php'; // Memanggil file index.php
         $this->_controller=new index(); // Memanggil Class index pada file index.php
         $this->_controller->index(); // Memanggil fungsi pada class index pada file index.php
-        exit;
       }else{
         require_once 'app/controllers/dashboard/dashboard.php'; // Memanggil file index.php
         $this->_controller=new dashboard(); // Memanggil Class index pada file index.php
         $this->_controller->dashboard(); // Memanggil fungsi pada class index pada file index.php
-        exit;
       }
     }
 
@@ -93,7 +92,7 @@
         {
           $this->_errors();
         }
-
+        
         require_once $file;
         $this->_controller=new $this->_url[0]();
 
@@ -128,6 +127,7 @@
             Session::flash('masuk', 'Masuk dulu gan!!!');
             require_once 'app/controllers/masuk/masuk.php';
             $this->_controller=new masuk();
+            $this->_controller->loadModel('masuk');
             $this->_controller->masuk();
             exit;
           }else{
@@ -137,6 +137,7 @@
             }
             require_once 'app/controllers/profil/profil.php';
             $this->_controller=new profil();
+            $this->_controller->loadModel('profil');
             $this->_controller->profil($this->_url[0]);
             exit;
           }

@@ -1,0 +1,203 @@
+/* BODY */
+body{
+  background:orange;
+}
+
+/* CONTAINER */
+.container{
+  width:100%;
+  height:100%;
+  font-size:12px;
+}
+
+/* ROW */
+.row{
+  display:flex;
+  flex-direction:row;
+}
+
+.row-c{
+  flex:none;
+  /* color:rgb(0, 0, 0);
+  background:rgb(255, 255, 255);
+  border:1px solid grey; */
+}
+
+/* COLUMN */
+.col{
+  display:flex;
+  flex-direction:column;
+}
+
+.col-c{
+  flex:none;
+  /* color:rgb(0, 0, 0);
+  background:rgb(255, 255, 255);
+  border:1px solid grey; */
+}
+
+/* JUSTIFY CONTENT */
+.j-f1{
+  justify-content:flex-start;
+}
+
+.j-f2{
+  justify-content:flex-end;
+}
+
+.j-f3{
+  justify-content:center;
+}
+
+.j-f4{
+  justify-content:space-around;
+}
+
+.j-f5{
+  justify-content:space-between;
+}
+
+/* ALIGN ITEMS */
+.a1{
+  align-items:flex-start;
+}
+
+.a2{
+  align-items:flex-end;
+}
+
+.a3{
+  align-items:center;
+}
+
+/* POSITION */
+.p-f{
+  position:fixed;
+}
+
+.p-a{
+  position:absolute;
+}
+
+.p-r{
+  position:relative;
+}
+
+.p-st{
+  position:static;
+}
+
+.p-s{
+  position:sticky;
+}
+
+/* HEADER */
+header{
+  width:100%;
+}
+
+.header{
+  height:50px;
+  background:rgb(25, 66, 85);
+}
+
+.h-cW{
+  width:96%;
+  margin:0 auto;
+}
+
+.t-h1{
+  font-size:2.5em;
+  font-weight:bold;
+}
+
+a[name=title]{
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+}
+
+/* DEFAULT FONTS */
+.d-f{
+  font-family:sans-serif;
+}
+
+#header1{
+  flex-grow:1;
+}
+
+#header2{
+  flex-grow:3;
+}
+
+#header3{
+  flex-grow:5;
+}
+
+#header4{
+  flex-grow:6;
+}
+
+/* NAV */
+nav div>div{
+  width:75px;
+  color:rgb(255, 255, 255);
+  font-weight:bold;
+  text-align:center;
+  background:red;
+}
+
+nav div>div:last-child{
+  width:auto;
+  text-align:right;
+}
+
+/* MENU HOVER */
+.nav{
+  width:100%;
+}
+
+.m-h div>div[class="col-c"]{
+  width:100%;
+  text-align:center;
+  background:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
+}
+
+.b{
+  top:55px;
+  text-align:center;
+}
+
+.cont{
+  width:100px;
+}
+
+
+/* Ini adalah untuk menyesuaikan tampilan */
+@media (max-width: 2560px){
+
+}
+
+@media (max-width: 1440px){
+
+}
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 425px){
+
+}
+
+@media (max-width: 375px){
+
+}
+
+@media (max-width: 320px){
+
+}
