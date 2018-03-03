@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a
+class ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36
 {
     public static $prefixLengthsPsr4 = array (
         'l' => 
@@ -17,17 +17,14 @@ class ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a
         'loopers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/route',
-            1 => __DIR__ . '/../..' . '/libs',
-            2 => __DIR__ . '/../..' . '/database',
-            3 => __DIR__ . '/../..' . '/pentatonik',
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1ea37a293ed0bd923eaae8b541b41e36::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
