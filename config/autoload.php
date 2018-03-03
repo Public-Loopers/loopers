@@ -11,6 +11,7 @@
      * Ini adalah sources tempat file class berada
      */
     $sources=array(
+                   "config/$class.php",
                    "database/$class.php",
                    "src/$class.php",
                    "mvc/$class.php",
