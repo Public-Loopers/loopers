@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'loopers\\' => array($baseDir . '/route', $baseDir . '/libs', $baseDir . '/database', $baseDir . '/src'),
+    'loopers\\' => array($baseDir . '/route', $baseDir . '/libs', $baseDir . '/database', $baseDir . '/pentatonik'),
 );

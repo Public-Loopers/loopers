@@ -60,7 +60,7 @@
        * Parameter kedua adalah untuk mengaktifkan (true/false) fungsi dibug
        * Parameter ketiga adalah untuk mengaktifkan (true/false) fungsi die()
        */
-      loopers\dibug::v_dump($this->_url, true, true);
+      dibug::v_dump($this->_url, true, true);
     }
 
     /**

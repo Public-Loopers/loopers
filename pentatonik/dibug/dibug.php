@@ -5,10 +5,6 @@
   class dibug
   {
 
-    public function __construct()
-    {
-      echo "dibug Bro!!!";
-    }
     /**
      * @Fungsi static untuk dibug var_dump
      */

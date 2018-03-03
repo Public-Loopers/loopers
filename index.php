@@ -17,11 +17,18 @@
   session_start();
 
   /**
+   * @Statik Fungsion Load
+   */
+  new dibug();
+
+  /**
    * @var route
    *
    * Metode route yang digunakan adalah metode bolean
    */
   $route=new route();
   $route->init();
+
+
 
 ?>

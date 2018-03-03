@@ -6,14 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'loopers\\Waktu' => $baseDir . '/src/time/waktu.php',
+    'loopers\\Waktu' => $baseDir . '/pentatonik/time/waktu.php',
     'loopers\\controller' => $baseDir . '/libs/controller.php',
     'loopers\\database\\database' => $baseDir . '/database/database.php',
-    'loopers\\dibug' => $baseDir . '/src/dibug/dibug.php',
-    'loopers\\interval' => $baseDir . '/src/time/interval.php',
+    'loopers\\dibug' => $baseDir . '/pentatonik/dibug/dibug.php',
+    'loopers\\interval' => $baseDir . '/pentatonik/time/interval.php',
     'loopers\\model' => $baseDir . '/libs/model.php',
-    'loopers\\redirect' => $baseDir . '/src/redirect/redirect.php',
+    'loopers\\redirect' => $baseDir . '/pentatonik/redirect/redirect.php',
     'loopers\\route' => $baseDir . '/route/route.php',
-    'loopers\\token' => $baseDir . '/src/token/token.php',
-    'loopers\\validation' => $baseDir . '/src/validation/validation.php',
+    'loopers\\token' => $baseDir . '/pentatonik/token/token.php',
+    'loopers\\validation' => $baseDir . '/pentatonik/validation/validation.php',
 );

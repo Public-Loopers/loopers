@@ -1,0 +1,16 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteBase /loopers/
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php/?url=$1 [NC,QSA,L]
+
+ErrorDocument 404 /loopers/error
+ErrorDocument 403 /loopers/error
+
+DirectoryIndex index.php
