@@ -5,6 +5,8 @@
    */
   use loopers\route;
   use loopers\dibug;
+  use loopers\token;
+  use loopers\redirect;
 
   /**
    * @PSR-4 autoload
@@ -20,6 +22,8 @@
    * @Statik Fungsion Load
    */
   new dibug();
+  new token();
+  new redirect();
 
   /**
    * @var route
@@ -28,7 +32,5 @@
    */
   $route=new route();
   $route->init();
-
-
 
 ?>
