@@ -1,7 +1,7 @@
 <?php
 
-  namespace loopers\database;
-  
+  namespace loopers;
+
   /**
    * Membuat class Database
    */

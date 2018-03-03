@@ -1,9 +1,18 @@
 <?php
 
   /**
+   * @Configurasi Database
+   */
+  define('SERVER','localhost');
+  define('USER','root');
+  define('PASS','');
+  define('DBNAME','bmtloop_data');
+
+  /**
    * @use namespace loopers
    */
   use loopers\route;
+  use loopers\database;
   use loopers\dibug;
   use loopers\token;
   use loopers\redirect;
@@ -21,6 +30,7 @@
   /**
    * @Statik Fungsion Load
    */
+  new database();
   new dibug();
   new token();
   new redirect();

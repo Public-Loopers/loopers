@@ -10,6 +10,7 @@
      */
     public function __construct()
     {
+      $this->loadModel('index');
       $this->loadView('index');
     }
 
