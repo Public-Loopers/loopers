@@ -23,25 +23,11 @@ class ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a
         ),
     );
 
-    public static $classMap = array (
-        'loopers\\Waktu' => __DIR__ . '/../..' . '/pentatonik/time/waktu.php',
-        'loopers\\controller' => __DIR__ . '/../..' . '/libs/controller.php',
-        'loopers\\database\\database' => __DIR__ . '/../..' . '/database/database.php',
-        'loopers\\dibug' => __DIR__ . '/../..' . '/pentatonik/dibug/dibug.php',
-        'loopers\\interval' => __DIR__ . '/../..' . '/pentatonik/time/interval.php',
-        'loopers\\model' => __DIR__ . '/../..' . '/libs/model.php',
-        'loopers\\redirect' => __DIR__ . '/../..' . '/pentatonik/redirect/redirect.php',
-        'loopers\\route' => __DIR__ . '/../..' . '/route/route.php',
-        'loopers\\token' => __DIR__ . '/../..' . '/pentatonik/token/token.php',
-        'loopers\\validation' => __DIR__ . '/../..' . '/pentatonik/validation/validation.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit93d8aec06c1033f06ac3cffc9c74901a::$classMap;
 
         }, null, ClassLoader::class);
     }
