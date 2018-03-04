@@ -19,8 +19,8 @@
       /**
        * @Head file
        */
-      $this->view->js=array('templates/index/js/index.js');
-      $this->view->css=array('templates/index/css/index.css');
+      $this->view->js=array('templates/core/src/js/index.js');
+      $this->view->css=array('templates/core/src/css/index.css');
 
       /**
        * @frame
