@@ -14,13 +14,13 @@
                    "route/$class.php",
                    "database/$class.php",
                    "mvc/$class.php",
+                   "loopers/session/$class.php",
                    "loopers/time/$class.php",
                    "loopers/token/$class.php",
                    "loopers/redirect/$class.php",
                    "loopers/validation/$class.php",
                    "loopers/dibug/$class.php",
-                   "loopers/input/$class.php",
-                   "loopers/session/$class.php"
+                   "loopers/input/$class.php"
                   );
 
     /**
