@@ -1,6 +1,12 @@
 <?php
 
   /**
+   * @config konstanta
+   */
+  require_once 'config/db_config.php';
+  require_once 'config/web_config.php';
+
+  /**
    * @Spl_autoload_register
    */
   require_once 'config/autoload.php';

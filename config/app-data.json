@@ -1,0 +1,11 @@
+{
+  "web_info" :
+  {
+    "nama"        : "Loopers",
+    "description" : "Web komunitas music creator",
+    "meta_tag"    : "Musik, FL Studio, Indie, Tutorial, Komunitas Musik",
+    "URI"         : "https://nolpertama.id",
+    "author"      : "Datros Sumendong",
+    "copyright"   : "2017"
+  }
+}
