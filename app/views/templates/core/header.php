@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id-ID">
+<html lang="en">
 <head>
 <?php require_once 'app/views/templates/core/headfile/coreHead.php'; ?>
 </head>

@@ -14,6 +14,7 @@
                    "route/$class.php",
                    "database/$class.php",
                    "mvc/$class.php",
+                   "app/models/classis/$class.php",
                    "loopers/session/$class.php",
                    "loopers/time/$class.php",
                    "loopers/token/$class.php",
